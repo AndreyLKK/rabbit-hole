@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+      RABBIT HOLE | Путеводитель по странному интернету и случайным сайтам
+    </title>
+    <meta
+      name="description"
+      content="Готов узнать, насколько глубока кроличья нора? Rabbit Hole — это генератор самых необычных, странных и залипательных сайтов интернета. Нажми кнопку и исчезни в сети."
+    />
+    <meta
+      name="keywords"
+      content="rabbit hole, кроличья нора, случайный сайт, the useless web, скучно за компом, странный интернет, секреты сети, веб сталкер, убить время, рандомайзер ссылок"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href="https://rabbithole.app/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rabbithole.app/" />
+    <meta property="og:title" content="RABBIT HOLE - Прыжок в неизвестность" />
+    <meta
+      property="og:description"
+      content="Открой для себя изнанку интернета. Одна кнопка - тысячи миров. Генератор случайных сайтов."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80"
+    />
+    <meta property="og:site_name" content="Rabbit Hole" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="RABBIT HOLE | Генератор случайных сайтов"
+    />
+    <meta
+      name="twitter:description"
+      content="Исследуй странный интернет. Нажми кнопку и отправься в путешествие."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80"
+    />
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Rabbit Hole",
+        "url": "https://rabbithole.app/",
+        "description": "Интерактивный генератор случайных сайтов для развлечения и исследования интернета.",
+        "applicationCategory": "EntertainmentApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": "Генерация случайных сайтов, поиск секретов Google Maps, коллекция интерактивных экспериментов",
+        "author": {
+          "@type": "Organization",
+          "name": "Rabbit Hole Team"
+        }
+      }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      /* Noise Texture */
+      .bg-noise {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        z-index: 5;
+        opacity: 0.05;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      }
+
+      .glass-panel {
+        background: rgba(10, 10, 10, 0.6);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .text-glow {
+        text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
+
+    <link rel="stylesheet" href="/index.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.2.0",
+          "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+          "react/": "https://esm.sh/react@18.2.0/",
+          "react-dom": "https://esm.sh/react-dom@18.2.0",
+          "lucide-react": "https://esm.sh/lucide-react@0.344.0",
+          "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+          "vite": "https://esm.sh/vite@7.2.6",
+          "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@5.1.1"
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="/rabbit-hole/assets/index-B393hQzl.js"></script>
+  </head>
+  <body class="bg-black text-white overflow-x-hidden font-sans antialiased">
+    <div id="root"></div>
+  </body>
+</html>
